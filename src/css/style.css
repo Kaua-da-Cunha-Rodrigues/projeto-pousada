@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;600;800;900&display=swap');
+
+*{
+    --cor0: #283b45;
+    --cor1: #366370;
+    --cor2: #c2c7bf;
+    --cor3: #f4eee5;
+
+    --fonte-padrao: 'Merriweather', serif;
+    --fonte-destaque: 'Sofia Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor2);
+    color: black;
+    font-family: var(--fonte-padrao);
+}
+
+header{
+    font-weight: bold;
+    width: 100%;
+}
+header .informacoes-empresa{
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header h1{
+    margin: auto;
+    padding: 0 20px;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+}
+header > .informacoes-empresa > a{
+    float: left;
+    margin: auto 10px auto 0;
+
+}
+header img{
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav{
+    padding: 5px;
+    background-color: var(--cor0);
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    color: white;
+    margin: 5px 15px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main{
+    max-width: 1440px;
+    margin: auto;
+    background-color: white;
+}
+main  h2{
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: var(--fonte-destaque);
+}
+main .foto-destaque{
+    min-width: 720px;
+    max-width: 100%;
+}
+main > p{
+    text-align: center;
+    padding: 10px;
+}
+main #quartos .icone-quartos{
+    display: flex;
+    max-width: 1440px;
+}
+main #quartos .bloco-quartos{
+    max-width: 320px;
+    background-color: var(--cor1);
+    margin: 20px;
+    border-radius: 10px;
+    color: lightgrey;
+}
+main #quartos .bloco-quartos h3{
+    padding: 5px;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+main #quartos .bloco-quartos .descricao{
+    max-width: 320px;
+    padding: 5px 10px 20px 10px;   
+    text-align: justify;
+    font-size: 0.7em; 
+}
+main #quartos .bloco-quartos .preco-reserva{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+main #quartos .bloco-quartos img{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px 10px 0 0;
+}
+main #eventos .desc-evento{
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.450);
+}
+main #eventos .desc-evento p{
+    width: 30%;
+    margin: auto 0 auto 5px;
+}
+main #eventos .desc-evento img{
+    width: 70%;
+    height: 200px;
+}
+main #galeria img{
+    width: 100%;
+    height: 600px;
+}
+main #localizacao{
+    width: 100%;
+}
+footer{
+    background-color: var(--cor0);
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <hr>
+    <form action="src/login/gravarCliente.php">
+        Nome: <br>  
+        <input type="text" name="nome" id="nome"> <br>
+        Email: <br> 
+        <input type="text" name="email" id="email"> <br>
+        Senha: <br>
+        <input type="password" name="senha" id="senha"> <br>
+        Sexo: <br>
+        <select name="sexo" id="sexo"> 
+            <option value="#">-- Selecione --</option>
+            <option value="m">Masculino</option>
+            <option value="f">Feminino</option>
+        </select> <br>
+        Idade: <br>
+        <input type="number" name="idade" id="idade">   <br> 
+        <input type="submit"> 
+    </form>    
+</body>
+</html>
