@@ -16,6 +16,7 @@ body{
     background-color: var(--cor2);
     color: black;
     font-family: var(--fonte-padrao);
+    line-height: 1.5em;
 }
 
 header{
@@ -67,6 +68,7 @@ main{
     background-color: white;
 }
 main  h2{
+    color: var(--cor1);
     padding: 20px 0;
     text-align: center;
     font-weight: bold;
@@ -136,5 +138,19 @@ main #localizacao{
 }
 footer{
     background-color: var(--cor0);
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+footer .endereco-e-afins{
+    width: 400px;
+    margin-right: 50px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+}
+footer .contatos{
+
 }
 
