@@ -31,17 +31,28 @@
                     <img src="src/img/wallpaper001.jpg" alt="Imagem do Quarto">
                     <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam assumenda, aut itaque quae ab error nostrum, cum in quam eligendi inventore dolores tenetur. Possimus quidem consectetur beatae, reiciendis ipsum fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae impedit fugit blanditiis error voluptas necessitatibus dolor recusandae ad quos laudantium natus commodi adipisci iusto quia, vel voluptates unde vitae?</p>
                     <div class="detalhes-quarto">
-                        <form action="#">
+                        <form action="back/login/gravar.php" method="post">
                             <p>Nome</p>
-                            <input type="text" name="email">
+                            <input type="text" name="nome">
                             <p>Email</p>
                             <input type="text" name="email">
                             <p>Telefone</p>
-                            <input type="number" name="telefone">
+                            <input type="number" name="tel">
                             <p>Check-in</p>
-                            <input type="date" name="check-in">
+                            <input type="date" name="data">
                             <p>Check-out</p>
-                            <input type="date" name="check-out">
+                            <input type="date" name="data2">
+                            <p> Digite o seu sexo:</p>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                            <input type="radio" name="sexo" value="naodeclarado"> Prefiro nao declarar
+                            <p>Escolha o tipo de acomodação:</p>
+                            <select name="quartos" id="quartos">
+                            <option value="quartos">Selecione</option>
+                            <option value="quartos1">Suite</option>
+                            <option value="quartos2">Quarto Duplo Standard</option>
+                            <option value="quartos3">Suite de luxo</option>
+                            </select>
                             <input type="submit" value="Reservar">
                             <button>Reservar Mais Quartos</button>
                         </form>
