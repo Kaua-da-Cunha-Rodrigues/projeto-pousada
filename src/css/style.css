@@ -168,6 +168,14 @@ footer .endereco-e-afins{
 footer .contatos{
     width: 50%;
     padding-right: 20px;
+    justify-content: space-between;
+}
+footer .contatos button#botao-admin{
+    width: 100px;
+    margin: 0;
+    float: right;
+    background-color: var(--cor2);
+    color: black;
 }
 
 /*CSS paginaQuarto.html*/
