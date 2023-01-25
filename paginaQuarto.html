@@ -29,7 +29,7 @@
             <article>
                 <div class="conteudo-quarto">
                     <img src="src/img/wallpaper001.jpg" alt="Imagem do Quarto">
-                    <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam assumenda, aut itaque quae ab error nostrum, cum in quam eligendi inventore dolores tenetur. Possimus quidem consectetur beatae, reiciendis ipsum fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae impedit fugit blanditiis error voluptas necessitatibus dolor recusandae ad quos laudantium natus commodi adipisci iusto quia, vel voluptates unde vitae?</p>
+                    <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam assumenda, aut itaque quae ab error nostrum, cum in quam eligendi inventore dolores tenetur. Possimus quidem consectetur beatae, reiciendis ipsum fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae impedit fugit blanditiis error voluptas necessitatibus dolor recusandae ad quos laudantium natus commodi adipisci iusto quia, vel voluptates unde vitae? lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quis, similique aliquid officiis qui ullam, exercitationem vitae ipsam reiciendis, a tenetur numquam nam eaque saepe excepturi sit sed dolorem animi!</p>
                     <div class="detalhes-quarto">
                         <form action="back/login/gravar.php" method="post">
                             <p>Nome</p>
@@ -42,10 +42,16 @@
                             <input type="date" name="data">
                             <p>Check-out</p>
                             <input type="date" name="data2">
-                            <p> Digite o seu sexo:</p>
-                            <input type="radio" name="sexo" value="masculino"> Masculino
-                            <input type="radio" name="sexo" value="feminino"> Feminino
-                            <input type="radio" name="sexo" value="naodeclarado"> Prefiro nao declarar
+                            <p> Informe o seu sexo:</p>
+                            <div class="sexualidade">
+                                <p>Masculino</p><input type="radio" name="sexo" value="masculino">
+                            </div> 
+                            <div class="sexualidade">
+                                <p>Feminino</p><input type="radio" name="sexo" value="feminino">
+                            </div> 
+                            <div class="sexualidade">
+                                <p>Prefiro não declarar</p><input type="radio" name="sexo" value="naodeclarado"> 
+                            </div>
                             <p>Escolha o tipo de acomodação:</p>
                             <select name="quartos" id="quartos">
                             <option value="quartos">Selecione</option>
