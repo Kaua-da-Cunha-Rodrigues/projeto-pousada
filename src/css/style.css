@@ -21,19 +21,19 @@ body{
 
 header{
     font-weight: bold;
-    width: 100%;
+    max-width: 100%;
 }
 header .informacoes-empresa{
     background-color: var(--cor3);
     display: flex;
     justify-content: space-between;
-    padding: 10px;
 }
 header h1{
     margin: auto;
     padding: 0 20px;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    line-height: 1em;
 }
 header > .informacoes-empresa > a{
     float: left;
@@ -41,29 +41,27 @@ header > .informacoes-empresa > a{
 
 }
 header img{
-    border-radius: 50%;
-    max-width: 100px;
+    width: 150px;
     max-height: 100px;
 }
 
 nav{
+    width: 100%;
+    height: auto;
     padding: 5px;
     background-color: var(--cor0);
     font-weight: bold;
 }
-nav ul{
-    display: flex;
-}
-nav ul li a{
+nav a{
     color: white;
-    margin: 5px 15px;
+    margin: 15px;
+    
 }
-nav ul li a:hover{
+nav a:hover{
     text-decoration: underline;
 }
-
 main{
-    max-width: 1440px;
+    max-width: 1080px;
     margin: auto;
     background-color: white;
 }
@@ -76,7 +74,6 @@ main  h2{
     font-family: var(--fonte-destaque);
 }
 main .foto-destaque{
-    min-width: 720px;
     max-width: 100%;
 }
 main > p{
@@ -88,38 +85,55 @@ main #quartos .icone-quartos{
     max-width: 1440px;
 }
 main #quartos .bloco-quartos{
+    display: block;
     max-width: 320px;
+    min-width: 170px;
+    width: auto;
     background-color: var(--cor1);
     margin: 20px;
     border-radius: 10px;
     color: lightgrey;
 }
 main #quartos .bloco-quartos h3{
+    color: white;
     padding: 5px;
     font-family: var(--fonte-destaque);
     font-size: 1.5em;
     text-decoration: underline;
 }
-main #quartos .bloco-quartos .descricao{
-    max-width: 320px;
-    padding: 5px 10px 20px 10px;   
-    text-align: justify;
-    font-size: 0.7em; 
-}
-main #quartos .bloco-quartos .preco-reserva{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-}
 main #quartos .bloco-quartos img{
     width: 100%;
-    height: 60%;
+    height: 50%;
     border-radius: 10px 10px 0 0;
+}
+main #quartos .bloco-quartos .descricao{
+    max-width: 320px;
+    padding: 5px 10px 10px 10px;   
+    text-align: justify;
+    font-size: 0.6em; 
+}
+main #quartos .bloco-quartos .preco-reserva{
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    font-size: 0.8em;
+}
+main #quartos .bloco-quartos button{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
 }
 main #eventos .desc-evento{
     display: flex;
     margin-bottom: 10px;
-    background-color: rgba(0, 0, 0, 0.450);
+    background-color: rgba(0, 0, 0, 0.356);
 }
 main #eventos .desc-evento p{
     width: 30%;
@@ -131,12 +145,13 @@ main #eventos .desc-evento img{
 }
 main #galeria img{
     width: 100%;
-    height: 600px;
+    max-height: 600px;
 }
-main #localizacao{
+main #localizacao iframe{
     width: 100%;
 }
 footer{
+    width: 100%;
     background-color: var(--cor0);
     margin-top: 30px;
     padding: 20px;
@@ -145,12 +160,13 @@ footer{
     display: flex;
 }
 footer .endereco-e-afins{
-    width: 400px;
-    margin-right: 50px;
+    width: 50%;
+    margin-right: 10px;
     padding-right: 20px;
     border-right: 1px solid white;
 }
 footer .contatos{
-
+    width: 50%;
+    padding-right: 20px;
 }
 

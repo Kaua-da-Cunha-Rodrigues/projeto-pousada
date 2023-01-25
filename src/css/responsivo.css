@@ -1,0 +1,39 @@
+@media (max-width: 500px){
+    header > .informacoes-empresa > h1{
+        font-size: 2em;
+    }
+}
+@media (max-width: 650px){
+    main .foto-destaque{
+        display: none;
+    }    
+    main #eventos .desc-evento{
+        background-color: transparent;
+    }
+    main #eventos p{
+        display: none;
+    }
+    main #eventos .desc-evento img{
+        width: 100%;
+    }
+}
+@media (max-width: 860px){
+    main #quartos .icone-quartos{
+        display: block;
+    }
+    main #eventos p{
+        max-width: 50%;
+        font-size: 0.5em;
+    }
+    footer .contatos,.endereco-e-afins{
+        font-size: 0.5em;
+    }
+}
+@media (max-width: 1000px){
+    main .icone-quartos h3{
+        font-size: 1em;
+    }
+    main #quartos .bloco-quartos img{
+        height: 40%;
+    }
+}
