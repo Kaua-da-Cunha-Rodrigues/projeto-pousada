@@ -1,0 +1,3 @@
+no arquivo banco.sql tem o banco de dados;
+em login/admin.php é a pagina inicial do back;
+em login/criaUser.php é a pagina de reserva que deverá ser adicionada a ou front;
