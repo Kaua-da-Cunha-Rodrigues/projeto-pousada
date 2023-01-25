@@ -204,8 +204,8 @@ main #quarto .conteudo-quarto .detalhes-quarto input[type=submit],button{
     border-radius: 10px;
     background-color: green;
 } 
-main #quarto .conteudo-quarto .detalhes-quarto input[type=date]{
-    width: 173px;
+main #quarto .conteudo-quarto .detalhes-quarto input{
+    width: 80%;
 }
 
 
