@@ -7,8 +7,11 @@
     <title>Página do Admin</title>
 </head>
 <body>
-    <a href=""></a>
-    <a href=""></a>
-        
+    <?php include_once 'cabecalho.php'?>
+    <h1>Funções do Admin</h1>
+    <hr>
+    <a href="criarQuarto.php">Registrar Quarto</a>
+    <a href="admin.php">Tabela de Quartos</a>
+
 </body>
 </html>

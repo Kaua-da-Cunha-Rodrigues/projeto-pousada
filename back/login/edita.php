@@ -1,4 +1,5 @@
 <html>
+    <?php include_once 'cabecalho.php'?>
     <head>
         <title>Editar Dados</title>
         <meta charset="UTF-8">
@@ -52,25 +53,24 @@
         $dado = $resultado->fetch_assoc();
         ?>
 
-        <div class="total">
             <h1 class="meio">Editar Quarto</h1><br>
-        </div>
+            <hr>
         
         <form method="POST" action="atualiza.php">
-        
-            Id:<input type="text" name="id" id="id" value="<?=$dado['idquarto']?>"><br>
-            nome:<input type="text" name="nome" id="nome" value="<?=$dado['nome']?>"><br>
+            <input type="hidden" name="id" id="id" value="<?=$dado['idquarto']?>">
+            <strong>Nome:</strong> <br>
+            <input type="text" name="nome" id="nome" value="<?=$dado['nome']?>"><br>
             
-            data do check in:<input type="date" name="data" id="data" value="<?=$dado['dtreserva']?>"><br>
-            estado <br>
-            livre<input type="radio" name="estado" value="livre">
-            ocupado<input type="radio" name="estado" value="ocupado" ><br>
-            <input type="submit" value="Editar">
-            
+            <strong>Data do Check-In:</strong> <br>
+            <input type="date" name="data" id="data" value="<?=$dado['dtreserva']?>"><br>
+            <strong>Estado</strong> <br>
+            Livre  <input type="radio" name="estado" value="livre"> <br>
+            Ocupado  <input type="radio" name="estado" value="ocupado" ><br>
+            <input type="submit" value="Editar">  
         </form>
         <?php
     }
- ?>
+        ?>
         
     </body>
 </html>

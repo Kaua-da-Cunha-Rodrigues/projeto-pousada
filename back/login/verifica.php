@@ -18,7 +18,7 @@
         }
         $_SESSION['nome'] = $nome;
         
-        header("Location: admin.php");
+        header("Location: index.php");
     }else{
         echo "
             <script>

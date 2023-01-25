@@ -173,6 +173,11 @@ footer .contatos{
 footer .contatos button#botao-admin{
     width: 100px;
     margin: 0;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    font-weight: bold;
     float: right;
     background-color: var(--cor2);
     color: black;
@@ -221,7 +226,7 @@ main #quarto .conteudo-quarto .detalhes-quarto input,select{
 main #quarto .conteudo-quarto .detalhes-quarto input[type=submit],input[type=number],input[type=date]{
     margin: 0 0 10px 0;
 }
-main #quarto .conteudo-quarto .detalhes-quarto input[type=submit],button{
+main #quarto .conteudo-quarto .detalhes-quarto input[type=submit], .conteudo-quarto button{
     display: block;
     color: white;
     width: 80%;
