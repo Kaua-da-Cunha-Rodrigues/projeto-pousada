@@ -170,3 +170,42 @@ footer .contatos{
     padding-right: 20px;
 }
 
+/*CSS paginaQuarto.html*/
+
+main #quarto .conteudo-quarto{
+    display: flex;
+    background-color: var(--cor3);
+}
+main #quarto .conteudo-quarto #descricao{
+    width: 40%;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+main #quarto .conteudo-quarto img{
+    width: 40%;
+    height: 400px;
+}
+main #quarto .conteudo-quarto .detalhes-quarto{
+    width: 20%;
+}
+main #quarto .conteudo-quarto .detalhes-quarto input[type=submit],input[type=number],input[type=date]{
+    margin: 0 0 10px 0;
+}
+main #quarto .conteudo-quarto .detalhes-quarto input[type=submit],button{
+    display: block;
+    color: white;
+    width: 80%;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+} 
+main #quarto .conteudo-quarto .detalhes-quarto input[type=date]{
+    width: 173px;
+}
+
+
