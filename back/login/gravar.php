@@ -25,7 +25,7 @@ if (mysqli_query($con,$sql)) {
 mysqli_close($con);
 echo "<script>
  alert('".$msg."');
- location.href='login.php';
+ location.href='../../index.html';
  </script>"
 
 ?>
