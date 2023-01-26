@@ -11,6 +11,7 @@
     <h1>Funções do Admin</h1>
     <hr>
     <a href="criarQuarto.php">Registrar Quarto</a>
+    <br> <br>
     <a href="admin.php">Tabela de Quartos</a>
 
 </body>

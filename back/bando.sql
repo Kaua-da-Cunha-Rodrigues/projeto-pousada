@@ -13,7 +13,8 @@ create table quartos(
     idquarto int primary key auto_increment,
     nome varchar(50) not null,
     estado enum("livre","ocupado") not null,
-    dtreserva date not null,
+    dtrentrada date not null,
+    dtsaida date not null,
     quarto varchar(50) not null
 );
 

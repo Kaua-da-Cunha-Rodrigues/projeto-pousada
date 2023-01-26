@@ -18,7 +18,6 @@ body{
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
 }
-
 header{
     font-weight: bold;
     max-width: 100%;
@@ -79,6 +78,9 @@ main .foto-destaque{
 main > p{
     text-align: center;
     padding: 10px;
+}
+main a:visited {
+    color: white;
 }
 main #quartos .icone-quartos{
     display: flex;
@@ -159,6 +161,9 @@ footer{
     font-weight: bold;
     display: flex;
 }
+footer a:visited {
+    color: var(--cor0);
+}
 footer .endereco-e-afins{
     width: 50%;
     margin-right: 10px;
@@ -180,7 +185,7 @@ footer .contatos button#botao-admin{
     font-weight: bold;
     float: right;
     background-color: var(--cor2);
-    color: black;
+    color: var(--cor0);
 }
 
 /*CSS paginaQuarto.html*/
@@ -233,6 +238,7 @@ main #quarto .conteudo-quarto .detalhes-quarto input[type=submit], .conteudo-qua
     font-family: var(--fonte-destaque);
     font-weight: bold;
     font-size: 1.3em;
+    cursor: pointer;
     margin: 10px auto;
     border: none;
     border-radius: 10px;

@@ -22,6 +22,8 @@
                 <th>Cliente</th>
                 <th>Status</th>
                 <th>Check-in</th>
+                <th>Check-Out</th>
+                <th>Tipo de Quarto</th>
                 <th>Editar</th>
                 <th>Excluir</th>
         </tr>
@@ -32,7 +34,9 @@
             echo"<td>".$dado["idquarto"]."</td>";
             echo"<td>".$dado["nome"]."</td>";
             echo"<td>".$dado["estado"]."</td>";
-            echo"<td>".$dado["dtreserva"]."</td>";
+            echo"<td>".$dado["dtentrada"]."</td>";
+            echo"<td>".$dado["dtsaida"]."</td>";
+            echo"<td>".$dado["quarto"]."</td>";
           
             echo"<td><a href='edita.php?id=".$dado["idquarto"]."&operacao=editar'><button class='btn btn-success'>Editar</button></a></td>";
             echo"<td><a href='excluir.php?id=".$dado["idquarto"]."&operacao=excluir'><button class='btn btn-danger'>Excluir</button></a></td>";

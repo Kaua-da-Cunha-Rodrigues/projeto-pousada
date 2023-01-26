@@ -5,10 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = filter_input(INPUT_POST, 'nome');
     $estado = filter_input(INPUT_POST, 'estado');
     $data = filter_input(INPUT_POST, 'data');
+    $data2 = filter_input(INPUT_POST, 'data2');
     //$data = filter_input(INPUT_POST, 'data');
 
     /* validar os dados recebidos do formulario */
-    if (empty($id) || empty($nome) || empty($estado) || empty($data)){
+    if (empty($id) || empty($nome) || empty($estado) || empty($data) || empty($data2)){
         //||  empty($data2
         echo "Todos os campos do formulário devem conter valores ";
         exit();
@@ -30,7 +31,7 @@ if ($con->connect_errno) {
 }
     
     /* texto sql da consulta*/
-    $consulta = "UPDATE quartos SET idquarto='$id', nome='$nome', dtreserva='$data', estado='$estado' WHERE idquarto='$id' ";
+    $consulta = "UPDATE quartos SET idquarto='$id', nome='$nome', dtentrada='$data', dtsaida='$data2', estado='$estado' WHERE idquarto='$id' ";
 
     /* executar a consulta e testar se ocorreu erro */
     if (!$con->query($consulta)) {
