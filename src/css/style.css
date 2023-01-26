@@ -33,6 +33,7 @@ header h1{
     font-family: var(--fonte-destaque);
     font-size: 3em;
     line-height: 1em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.291);
 }
 header > .informacoes-empresa > a{
     float: left;
@@ -55,8 +56,7 @@ nav{
 }
 nav a{
     color: white;
-    margin: 15px;
-    
+    margin: 15px;   
 }
 nav a:hover{
     text-decoration: underline;
@@ -65,6 +65,8 @@ main{
     max-width: 1080px;
     margin: auto;
     background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.291);
+    border-radius: 0 0 5px 5px;
 }
 main  h2{
     color: var(--cor1);
@@ -73,6 +75,7 @@ main  h2{
     font-weight: bold;
     font-size: 2em;
     font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.291);
 }
 main .foto-destaque{
     max-width: 100%;
@@ -96,6 +99,7 @@ main #quartos .bloco-quartos{
     background-color: var(--cor1);
     margin: 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.291);
     color: lightgrey;
 }
 main #quartos .bloco-quartos h3{
@@ -195,6 +199,7 @@ footer .contatos button#botao-admin{
 main #quarto .conteudo-quarto{
     display: flex;
     background-color: var(--cor3);
+    border-radius: 0 0 5px 5px;
 }
 main #quarto .conteudo-quarto #descricao{
     width: 40%;
