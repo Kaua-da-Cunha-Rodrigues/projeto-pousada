@@ -23,11 +23,11 @@ create table cliente(
     nome varchar(50) not null,
     email varchar(80) not null,
     telefone varchar(30) not null,
-    sexo enum("m","f") not null,
+    sexo enum("m","f","naodeclarado") not null,
     dtentrada date,
     dtsaida date,
     idquarto int,
-    foreign key(idquarto) REFERENCES quartos(idquarto)
+    foreign key(idquarto) REFERENCES quartos(idquarto) on delete cascade
 );
 
 

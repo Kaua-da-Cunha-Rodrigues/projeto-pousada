@@ -15,7 +15,7 @@
         $consulta = "SELECT * FROM quartos ORDER BY idquarto ASC;";
         $verifica = $con->query($consulta) or die($con->error); 
 
-        echo"<table class='table table-striped'>";
+        echo"<table class='table table-striped' >";
     ?>
         <tr>
             <th>Id</th>
@@ -39,7 +39,7 @@
             echo"<td>".$dado["quarto"]."</td>";
           
             echo"<td><a href='edita.php?id=".$dado["idquarto"]."&operacao=editar'><button class='btn btn-success'>Editar</button></a></td>";
-            echo"<td><a href='excluir.php?id=".$dado["idquarto"]."&operacao=excluir'><button class='btn btn-danger'>Excluir</button></a></td>";
+            echo"<td><a href='excluir.php?id=".$dado["idquarto"]."&operacao=excluir&modo=quarto'><button class='btn btn-danger'>Excluir</button></a></td>";
             
             echo"</tr>";
             

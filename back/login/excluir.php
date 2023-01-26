@@ -1,31 +1,27 @@
 <?php
 
-//Pegar a ID de quem sera excluido
-$id= $_GET["id"];
+include("../logica/conexao.php");
+$modo = $_GET['modo'];
+$id = intval($_GET['id']);
+if($modo == 'quarto'){
+    $sql_code = "DELETE FROM quartos WHERE idquarto = '$id'";
+    $local = 'admin.php';
+}elseif($modo == 'cliente'){
+    $sql_code = "DELETE FROM cliente WHERE idCliente = '$id'";
+    $local = 'consultaCliente.php';
+}else{
+    $sql_code = "DELETE FROM admin WHERE idAdmin = '$id'";    
+    $local = 'consultaAdmin.php';
+};
+$sql_query = $con->query($sql_code) or die($con->error);
 
-//fazer a conexao com o banco de dados
-include_once '../logica/conexao.php';
-
-//montar a instruçao sql apagar
-$sql= "delete from quartos where idquarto=".$id;
-
-//executar no banco a acao
-// O banco de dados nao emite a mensagem de gravar, sendo assim, vou dar um if p mim saber se foi gravado no banco ou n
-if (mysqli_query($con,$sql)) {
-    $msg= "excluido com sucesso";
-}  else {
-    $msg = "Erro ao excluir";
-}
-
-// fechar a conexao com o banco
-mysqli_close($con);
-
-//retornar para a pagina
-echo" <script>
-        alert('".$msg."');
-        location.href= 'admin.php'; 
+if($sql_query){
+    echo "<script>
+        location.href ='".$local."';
     </script>";
-
-
-
+    }else{
+        echo "<script>
+            alert('Nao foi possivel deletar.');location.href ='".$local."';
+        </script>";
+    }
 ?>

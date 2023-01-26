@@ -21,7 +21,6 @@
             <th>Id</th>
             <th>Nome</th>
             <th>Senha</th>
-            <th>Editar</th>
             <th>Excluir</th>
         </tr>
             <!--Tentar esconder a senha da tabela depois -->
@@ -32,8 +31,7 @@
             echo"<td>".$dado["nome"]."</td>";
             echo"<td>".$dado["senha"]."</td>";
           
-            echo"<td><a href='edita.php?id=".$dado["idAdmin"]."&operacao=editar'><button class='btn btn-success'>Editar</button></a></td>";
-            echo"<td><a href='excluir.php?id=".$dado["idAdmin"]."&operacao=excluir'><button class='btn btn-danger'>Excluir</button></a></td>";
+            echo"<td><a href='excluir.php?id=".$dado["idAdmin"]."&operacao=excluir&modo=admin'><button class='btn btn-danger'>Excluir</button></a></td>";
             
             echo"</tr>";
             
