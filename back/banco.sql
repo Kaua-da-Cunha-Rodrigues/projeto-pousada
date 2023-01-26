@@ -19,12 +19,15 @@ create table quartos(
 );
 
 create table cliente(
+    idCliente int primary key auto_increment,
     nome varchar(50) not null,
     email varchar(80) not null,
     telefone varchar(30) not null,
     sexo enum("m","f") not null,
-    dtcheckin date 
-
+    dtentrada date,
+    dtsaida date,
+    idquarto int,
+    foreign key(idquarto) REFERENCES quartos(idquarto)
 );
 
 

@@ -13,6 +13,11 @@
     <a href="criarQuarto.php">Registrar Quarto</a>
     <br> <br>
     <a href="admin.php">Tabela de Quartos</a>
-
+    <br> <br>
+    <a href="criaAdmin.php">Registrar Perfil Admin</a>
+    <br> <br>
+    <a href="consultaAdmin.php">Consultar Admins</a>
+    <br> <br>
+    <a href="consultaCliente.php">Consultar Clientes</a>
 </body>
 </html>

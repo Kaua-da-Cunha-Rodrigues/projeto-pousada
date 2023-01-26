@@ -65,13 +65,13 @@
             <input type="date" name="data" id="data" value="<?=$dado['dtentrada']?>"><br>
             <strong>Data do Check-Out</strong> <br>
             <input type="date" name="data2" id="data2" value="<?=$dado['dtsaida']?>"><br>
-            <strong>Estado</strong> <br>
+            <strong>Status</strong> <br>
             Livre  <input type="radio" name="estado" value="livre"> <br>
             Ocupado  <input type="radio" name="estado" value="ocupado" ><br>
             <input type="submit" value="Editar">  
         </form>
         <?php
-    }
+            }
         ?>
     <a href="admin.php">Voltar</a>   
     </body>
