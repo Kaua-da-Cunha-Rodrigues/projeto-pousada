@@ -50,6 +50,8 @@ nav{
     padding: 5px;
     background-color: var(--cor0);
     font-weight: bold;
+    position: sticky;
+    top: 0px;
 }
 nav a{
     color: white;
@@ -243,6 +245,9 @@ main #quarto .conteudo-quarto .detalhes-quarto input[type=submit], .conteudo-qua
     border: none;
     border-radius: 10px;
     background-color: green;
+}
+footer.rodape-quarto{
+    margin-top: 123px;
 }
 
 

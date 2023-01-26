@@ -40,8 +40,8 @@
             echo"<td>".$dado["dtentrada"]."</td>";
             echo"<td>".$dado["dtsaida"]."</td>";
           
-            echo"<td><a href='edita.php?id=".$dado["idCliente"]."&operacao=editar'><button class='btn btn-success'>Editar</button></a></td>";
-            echo"<td><a href='excluir.php?id=".$dado["idCliente"]."&operacao=excluir'><button class='btn btn-danger'>Excluir</button></a></td>";
+            echo"<td><a href='editaCliente.php?id=".$dado["idCliente"]."&operacao=editar'><button class='btn btn-success'>Editar</button></a></td>";
+            echo"<td><a href='excluir.php?id=".$dado["idCliente"]."&operacao=excluir&modo=cliente'><button class='btn btn-danger'>Excluir</button></a></td>";
             
             echo"</tr>";
             
