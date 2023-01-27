@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
     <title>Página do Quarto</title>
 </head>
 <body>
