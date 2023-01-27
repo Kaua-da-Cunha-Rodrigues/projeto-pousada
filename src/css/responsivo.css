@@ -25,6 +25,9 @@
         max-width: 50%;
         font-size: 0.5em;
     }
+    main #quarto .conteudo-quarto #descricao{
+        font-size: 0.5em;
+    }
     footer .contatos,.endereco-e-afins{
         font-size: 0.5em;
     }

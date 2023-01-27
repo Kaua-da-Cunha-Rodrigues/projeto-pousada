@@ -60,7 +60,7 @@
 
             <strong>Nome:</strong> <br>
             <input type="text" name="nome" id="nome" value="<?=$dado['nome']?>"><br>
-
+                                                 
             <strong>Email:</strong> <br>
             <input type="text" name="email" id="email" value="<?=$dado['email']?>"><br>
 

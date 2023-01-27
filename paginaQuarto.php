@@ -10,10 +10,16 @@
     <title>Página do Quarto</title>
 </head>
 <body>
+    <?php 
+        $img = $_GET['img'];
+    ?>
     <header id="cabecalho">
         <div class="informacoes-empresa">
-            <img src="src/img/pattern001.png" alt="Logo Empresa" class="foto-header">
-            <h1>Pousada do Abraão</h1>
+            <img src="src/img/logo3.png" alt="Logo Empresa" class="foto-header">
+            <h1>Caminho da Praia</h1>
+            <div id="centralizar-header">
+
+            </div>
         </div>
     </header>
     <nav>   
@@ -28,8 +34,37 @@
          <section id="quarto">
             <article>
                 <div class="conteudo-quarto">
-                    <img src="src/img/wallpaper001.jpg" alt="Imagem do Quarto">
-                    <p id="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam assumenda, aut itaque quae ab error nostrum, cum in quam eligendi inventore dolores tenetur. Possimus quidem consectetur beatae, reiciendis ipsum fugiat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestiae impedit fugit blanditiis error voluptas necessitatibus dolor recusandae ad quos laudantium natus commodi adipisci iusto quia, vel voluptates unde vitae? lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quis, similique aliquid officiis qui ullam, exercitationem vitae ipsam reiciendis, a tenetur numquam nam eaque saepe excepturi sit sed dolorem animi!</p>
+                    <img src="src/img/<?php 
+                        if($img == 1){
+                            echo 'foto-quarto1.jpg';
+                        }elseif($img == 2){
+                            echo 'foto-quarto2.png';
+                        }elseif($img == 3){
+                            echo 'foto-quarto3.jpg';
+                        }elseif($img == 4){
+                            echo 'foto-quarto4.jpg';
+                        }elseif($img == 5){
+                            echo 'foto-quarto5.jfif';
+                        }elseif($img == 6){
+                            echo 'foto-quarto6.jpg';
+                        }elseif($img == 7){
+                            echo 'foto-quarto7.jfif';
+                        }elseif($img == 8){
+                            echo 'foto-quarto8.jpg';
+                        }
+                    ?>" alt="Imagem do Quarto">
+                    <p id="descricao">
+                        Você merece ter um bom descanso depois de um ano de muito trabalho. Por isso, nós indicamos a você que está de ferias por nossa cidade . Nós temos quartos com TV, frigobar, e ar condicionado.
+
+                        Você que visita nossa ilha, de ferias ou a passeio, hospede-se em nossa pousada. Atendimento de primeira. Quartos e suítes com o máximo de conforto, privacidade e tranquilidade.
+                        
+                        Escolha perfeita para quem procura um cantinho para relaxar e curtir o clima praiano de Angra dos Reis. Privilegiadamente localizada bem na costeira do mar, a pousada tem por toda parte uma vista deslumbrante, para completar ainda mais a paisagem, tem um lindo deck com piscina de borda infinita, espreguiçadeiras, e redes espalhadas para quem quiser descansar e se deslumbrar com o cenário.
+
+
+                        A pousada possui uma localização excelente, uma equipe fenomenal. Possuem passeios saindo da própria pousada, ou seja, você encontra tudo em apenas um local.
+
+
+                    </p>
                     <div class="detalhes-quarto">
                         <form action="back/login/gravar.php" method="post">
                             <p>Nome</p>

@@ -6,7 +6,7 @@
     --cor0: #283b45;
     --cor1: #366370;
     --cor2: #c2c7bf;
-    --cor3: #f4eee5;
+    --cor3: #F8F4F3;
 
     --fonte-padrao: 'Merriweather', serif;
     --fonte-destaque: 'Sofia Sans', sans-serif;
@@ -42,9 +42,12 @@ header > .informacoes-empresa > a{
 }
 header img{
     width: 150px;
+    max-height: 150px;
+}
+header #centralizar-header{
+    width: 150px;
     max-height: 100px;
 }
-
 nav{
     width: 100%;
     height: auto;
@@ -144,11 +147,11 @@ main #eventos .desc-evento{
     background-color: rgba(0, 0, 0, 0.356);
 }
 main #eventos .desc-evento p{
-    width: 30%;
+    width: 50%;
     margin: auto 0 auto 5px;
 }
 main #eventos .desc-evento img{
-    width: 70%;
+    width: 50%;
     height: 200px;
 }
 main #galeria img{

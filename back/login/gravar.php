@@ -29,7 +29,7 @@
     }
         echo "<script>
                 alert('".$msg."');
-                location.href='../../paginaQuarto.html';
+                location.href='../../paginaQuarto.php';
             </script>";
 
     
