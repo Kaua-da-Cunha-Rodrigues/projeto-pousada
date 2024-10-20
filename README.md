@@ -1,2 +1,2 @@
 # projeto-pousada
- Projeto Integrador - Desenvolvedor Wem Senac
+ Projeto Integrador - Desenvolvedor Web Senac
